@@ -1,0 +1,33 @@
+/* Le CSS les selecteurs */
+.upper{
+    text-transform: uppercase;
+    color: rgb(18, 137, 18);
+}
+/* sélecteur de descendance */
+p a {
+    color: red;
+}
+
+/* sélecteur de groupe */
+h1, h2{
+    background-color: aquamarine;
+}
+
+/* selecteur d'élément qui suit DIRECTEMENT => le voisin direct */
+.container + .emportant{
+    background-color: red;
+    color: yellow;
+}
+
+/* selectionne TOUS les voisins directs */
+p ~ span {
+    color: purple;
+}
+
+/* les > : Sélection d'un enfant directement flèche en tant que combinateur */
+span{
+    background-color: rgb(14, 179, 179);
+}
+div > span {
+    background-color: rgb(212, 212, 22);
+}
